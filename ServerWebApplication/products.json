@@ -1,0 +1,106 @@
+{
+  "MacBookProidentifier" : {
+    "category" : "Laptops",
+    "count" : 20,
+    "description" : "3.1GHz dual-core Intel Core i5 processor with Turbo Boost up to 3.5GHz\n\n8GB 2133MHz LPDDR3 memory\n256GB SSD storage, 13.3\" 2560 x 1600 IPS Retina Display\n\nIntel Iris Plus Graphics 650\nTouch Bar and Touch ID, Mac OS High Sierra",
+    "id" : "MacBookProidentifier",
+    "imageUrl" : "https://firebasestorage.googleapis.com/v0/b/zpw-shop-29675.appspot.com/o/15447071230254gpm1d6n38umacbook_pro.jpg?alt=media&token=771d67f1-4ed9-4ab0-ac52-4adb80e388d1",
+    "name" : "Apple Macbook Pro 13\"",
+    "price" : 33000,
+    "promotionId" : "-LTt-8rTJwP9soo2NkWM"
+  },
+  "Macbookidentifier" : {
+    "category" : "Laptops",
+    "count" : 10,
+    "description" : "Apple Macbook Retina Display Laptop (12 Inch Full-HD LED Backlit IPS Display, Intel Core M-5Y31 1.1GHz up to 2.4GHz, 8GB RAM, 256GB SSD, Wi-Fi",
+    "id" : "Macbookidentifier",
+    "imageUrl" : "https://firebasestorage.googleapis.com/v0/b/zpw-shop-29675.appspot.com/o/macbook.jpg?alt=media&token=2b718e8c-eb24-403b-be7e-c0fb5333b02f",
+    "name" : "Apple Macbook 12\"",
+    "price" : 5000,
+    "promotionId" : "-LTsybHMIzarHAk9ro71"
+  },
+  "cableHdmi7identifier" : {
+    "category" : "Accessories",
+    "count" : 100,
+    "description" : "HDMI A Male to A Male Cable: Supports Ethernet, 3D, 4K video and Audio Return Channel (ARC)",
+    "id" : "cableHdmi7identifier",
+    "imageUrl" : "https://firebasestorage.googleapis.com/v0/b/zpw-shop-29675.appspot.com/o/cable_hdmi.jpg?alt=media&token=0e7380a8-3748-400a-aad6-2781bfc953d7",
+    "name" : "High-Speed HDMI",
+    "price" : 30,
+    "promotionId" : "-LTsybHMIzarHAk9ro71"
+  },
+  "caseIphone7identifier" : {
+    "category" : "Accessories",
+    "count" : 200,
+    "description" : "Ultra-thin & Ultra-light: The ultra slim fit protective iPhone 7 case/ iPhone 8 case, You will feel nothing on your phone, But it did keep the protection of iPhone and give you the excellent grip.",
+    "id" : "caseIphone7identifier",
+    "imageUrl" : "https://firebasestorage.googleapis.com/v0/b/zpw-shop-29675.appspot.com/o/case_iphone.jpg?alt=media&token=ec681aee-4ba0-4554-a101-db9602782b07",
+    "name" : "Case iPhone 8",
+    "price" : 20,
+    "promotionId" : "-LTsybHMIzarHAk9ro71"
+  },
+  "caseMacbook7identifier" : {
+    "category" : "Accessories",
+    "count" : 100,
+    "description" : "The case was designed ONLY to be compatible with MacBook 12 Inch with Retina Display Model A1534 (Newest Version 2017/2016/2015).",
+    "id" : "caseMacbook7identifier",
+    "imageUrl" : "https://firebasestorage.googleapis.com/v0/b/zpw-shop-29675.appspot.com/o/case_macbook.jpg?alt=media&token=e81dc5fc-4981-4859-89ea-aeb245676ef4",
+    "name" : "Case Cover MacBook",
+    "price" : 40,
+    "promotionId" : "-LTsybHMIzarHAk9ro71"
+  },
+  "dellU2414Hidentifier" : {
+    "category" : "Monitors",
+    "count" : 40,
+    "description" : "The Dell™ 24 Monitor – P2414H adjusts to fit your work style and provides virtually all the connectivity options you'll need over the course of the day.\n Monitor stand has full adjustability features to maximise viewing comfort\n Easily transition from landscape to portrait orientation – gives you the option of viewing large web pages with less scrollingn\n Dell Display Manager is your one stop software application to manually adjust or auto assign optimal preset modes to specific software applications",
+    "id" : "dellU2414Hidentifier",
+    "imageUrl" : "https://firebasestorage.googleapis.com/v0/b/zpw-shop-29675.appspot.com/o/dell_2414.jpeg?alt=media&token=488b33a3-3e36-4559-9882-acd50126403e",
+    "name" : "DELL U2414H",
+    "price" : 34300
+  },
+  "dellU2715Hidentifier" : {
+    "category" : "Monitors",
+    "count" : 37,
+    "description" : "Designed for your comfort and convenience.\n\nWork the way you want. Position your monitor for ultimate comfort with a full range of tilt, pivot, swivel and height adjustments along with easy connections to your PC and peripherals.\n\nSmoothly pivot 90° clockwise or anti-clockwise, placing the thinnest edges side-by-side for an enhanced viewing experience, especially ideal for dual or multi-monitor set-up.\nThe U2715H is VESA-compatible, so you can wall mount your monitor or attach it to the optional Dell Single Monitor Arm.",
+    "id" : "dellU2715Hidentifier",
+    "imageUrl" : "https://firebasestorage.googleapis.com/v0/b/zpw-shop-29675.appspot.com/o/dell_2715.jpg?alt=media&token=ced4aae1-7c6a-4183-ba39-be3d8e1b222f",
+    "name" : "DELL U2715H",
+    "price" : 34800
+  },
+  "iphone7identifier" : {
+    "category" : "Smartphones",
+    "count" : 34,
+    "description" : "Keep everything you love about iPhone up to date, secure, and accessible from any device with iCloud.\nMulti-Touch display with IPS technology.\nWith just a single press, 3D Touch lets you do more than ever before.\nThe 12-megapixel iSight camera captures sharp, detailed photos. It takes 4K video, up to four times the resolution of 1080p HD video.\nSplash-, Water- and Dust-Resistant4\nRated IP67 under IEC standard 60540",
+    "id" : "iphone7identifier",
+    "imageUrl" : "https://firebasestorage.googleapis.com/v0/b/zpw-shop-29675.appspot.com/o/30026135b.jpg?alt=media&token=467598ca-ce29-42c5-b845-e51f27496913",
+    "name" : "iPhone 7",
+    "price" : 2000
+  },
+  "iphone8identifier" : {
+    "category" : "Smartphones",
+    "count" : 22,
+    "description" : "4.7-Inch Retina HD display with true Tone\nIP67 water and dust resistant (maximum depth of 1 meter up to 30 minutes)\n12MP camera with OIS and 4K video\n7MP FaceTime HD Camera with Retina flash\nTouch ID for secure authentication and Apple Pay\nA11 bionic with neutral engine",
+    "id" : "iphone8identifier",
+    "imageUrl" : "https://firebasestorage.googleapis.com/v0/b/zpw-shop-29675.appspot.com/o/iPhone_8.jpg?alt=media&token=ff7410fd-3ef0-42d1-8496-0259bc76e9ed",
+    "name" : "iPhone 8",
+    "price" : 3000
+  },
+  "iphoneXSMaxidentifier" : {
+    "category" : "Smartphones",
+    "count" : 24,
+    "description" : "\"6.5\" OLED screen, HDR and 3D Touch\n Water Resistant for maximum depth of 2 meters up to 30 mins\nDual 12 MP wide-angle and telephoto cameras\nFace ID\nWireless Charging",
+    "id" : "iphoneXSMaxidentifier",
+    "imageUrl" : "https://firebasestorage.googleapis.com/v0/b/zpw-shop-29675.appspot.com/o/iPhone_xs_max.jpg?alt=media&token=1b7df5e7-05c8-4b2d-8f44-4fced57f824f",
+    "name" : "iPhone XS Max",
+    "price" : 3500
+  },
+  "iphoneXidentifier" : {
+    "category" : "Smartphones",
+    "count" : 12,
+    "description" : "5.8-inch Super Retina display (OLED) with HDR\nIP67 water and dust resistant (max depth of 1m up to 30 mines)\n12MP dual cameras with dual OIS and 7MP True Depth front camera—Portrait mode and Portrait Lighting\nFace ID for secure authentication and Apple Pay\nA11 Bionic with Neural Engine\nWireless charging—works with Qi chargers",
+    "id" : "iphoneXidentifier",
+    "imageUrl" : "https://firebasestorage.googleapis.com/v0/b/zpw-shop-29675.appspot.com/o/%20iPhone_x.jpg?alt=media&token=d5da3dad-5a97-49b3-8bb3-42bfcb26fef9",
+    "name" : "iPhone X",
+    "price" : 4000
+  }
+}

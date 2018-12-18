@@ -1,0 +1,87 @@
+
+<h2 mat-dialog-title>Product</h2>
+<mat-dialog-content >
+
+<mat-grid-list cols="3" rowHeight="500px">
+  <mat-grid-tile [colspan]="1" [rowspan]="1">
+    <mat-card class="dashboard-card">
+      <mat-card-header>
+        <mat-card-title>
+          Product Image
+        </mat-card-title>
+      </mat-card-header>
+      <mat-card-content class="dashboard-card-content">
+        <div>
+          <img src="{{product.imageUrl}}" class="productImage" height="auto" width="100%" alt="">
+        </div>
+        <div>
+          <br>
+          <input type="file" #fileInput  (change)="prepareToUpload($event)" accept=".png,.jpg" />
+          <br>
+          <br>
+          <button mat-stroked-button color="primary" (click) = "uploadFile()">Upload Image</button>
+        </div>
+      </mat-card-content>
+    </mat-card>
+  </mat-grid-tile>
+
+  <mat-grid-tile [colspan]="1" [rowspan]="1">
+      <mat-card class="dashboard-card">
+        <mat-card-header>
+          <mat-card-title>
+            Product Description
+          </mat-card-title>
+        </mat-card-header>
+        <mat-card-content class="dashboard-card-content">
+          <form class="example-form">
+            <mat-form-field class="example-full-width">
+              <input matInput #productNameField placeholder="Name" 
+              (keyup)="productName = productNameField.value" value="{{productName}}">
+            </mat-form-field>
+          
+            <mat-form-field class="example-full-width">
+              <textarea matInput #productDescriptionField spellcheck="false" placeholder="Description"
+              rows="15" (keyup)="productDescription = productDescriptionField.value" 
+              value="{{productDescription}}"></textarea>
+            </mat-form-field>
+          </form>
+        </mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+
+    <mat-grid-tile [colspan]="1" [rowspan]="1">
+      <mat-card class="dashboard-card">
+        <mat-card-header>
+          <mat-card-title>
+            Product Store Info
+          </mat-card-title>
+        </mat-card-header>
+        <mat-card-content class="dashboard-card-content">
+          <div>Category {{productCategory}}</div>
+          <mat-form-field>
+              <mat-select placeholder="Category" [(ngModel)]="productCategory" (selectionChange)="optionChanged($event)">
+                <mat-option *ngFor="let category of categories" value="{{category.name}}"> {{category.name}} </mat-option>
+              </mat-select>
+            </mat-form-field>
+          <div>Count</div>
+          <mat-form-field class="example-margin">
+              <input matInput type="number" placeholder="Count" step="1" [(ngModel)]="productCount">
+          </mat-form-field>
+          <div>Price</div>
+          <mat-form-field class="example-margin">
+              <input matInput type="number" placeholder="Discount" step="0.1" [(ngModel)]="productPrice">
+          </mat-form-field>
+          <button mat-stroked-button color="warn" *ngIf="isUpdate" (click) = "deleteProduct()" mat-dialog-close>DELETE PRODUCT</button>
+        </mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+
+
+
+</mat-grid-list>
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+  <button mat-button mat-dialog-close>Cancel</button>
+  <button mat-raised-button color="primary" *ngIf="isUpdate" (click) = "updateProduct()" [mat-dialog-close]="true">Update Info</button>
+  <button mat-raised-button color="primary" *ngIf="!isUpdate" (click) = "createProduct()" [mat-dialog-close]="true">Create Product</button>
+</mat-dialog-actions>

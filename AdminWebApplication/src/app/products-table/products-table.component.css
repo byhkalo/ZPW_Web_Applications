@@ -1,0 +1,24 @@
+.mat-h1 {
+  margin: 20px;
+}
+.full-width-table {
+  width: 100%;
+}
+
+.mat-form-field {
+  margin: 15px;
+  font-size: 14px;
+  width: 70%;
+}
+.mat-row { 
+  height: 100px; 
+  cursor: pointer;
+}
+
+.mat-row:hover {
+  background: #303030;
+}
+
+.mat-fab {
+  margin-right: 20px;
+}

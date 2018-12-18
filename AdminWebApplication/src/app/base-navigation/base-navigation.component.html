@@ -1,0 +1,36 @@
+<mat-toolbar color="primary">
+  <button
+    type="button"
+    aria-label="Toggle sidenav"
+    mat-icon-button
+    (click)="drawer.toggle()"
+    >
+    <!-- *ngIf="isHandset$ | async" -->
+    <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+  </button>
+  <span>AdminWebApplication</span>
+</mat-toolbar>
+
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav #drawer class="sidenav" fixedInViewport="true"
+      [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+      [mode]="(isHandset$ | async) ? 'over' : 'side'"
+      [opened]="!(isHandset$ | async)">
+    <mat-toolbar>Menu</mat-toolbar>
+    <mat-nav-list>
+      <div>
+        <button class="menuButton" mat-raised-button color="primary" (click)="openDashboard()">Dashboard</button>
+      </div>
+      <div>
+        <button class="menuButton" mat-raised-button color="primary" (click)="openProducts()">Products</button>
+      </div>
+      <div>
+        <button class="menuButton" mat-raised-button color="primary" (click)="openOrders()">Orders</button>
+      </div>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+      <div class="col-xl-12"> <router-outlet></router-outlet> </div>
+    <!-- Add Content Here -->
+  </mat-sidenav-content>
+</mat-sidenav-container>

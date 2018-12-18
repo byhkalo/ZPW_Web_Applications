@@ -1,0 +1,151 @@
+<div class="grid-container">
+  <h1 class="mat-h1">Orders</h1>
+  <mat-grid-list cols="3" rowHeight="800px">
+
+    <mat-grid-tile [colspan]="1" [rowspan]="1">
+      <mat-card class="dashboard-card">
+        <mat-card-header>
+          <mat-card-title>
+            Unmanaged
+          </mat-card-title>
+        </mat-card-header>
+        <mat-card-content class="dashboard-card-content">
+          <mat-form-field>
+            <input matInput (keyup)="applyFilterUnmanaged($event.target.value)" placeholder="Filter Unmanaged Orders">
+          </mat-form-field>
+          <div class="table-container mat-elevation-z8">
+              <table mat-table class="full-width-table" [dataSource]="unmanagedOrdersDataSource" matSort aria-label="Elements">
+                <!-- Id Column -->
+                <ng-container matColumnDef="id">
+                  <th mat-header-cell *matHeaderCellDef mat-sort-header>Id</th>
+                  <td mat-cell *matCellDef="let row">{{row.id}}</td>
+                </ng-container>
+                <!-- Client Name Column -->
+                <ng-container matColumnDef="clientLastName">
+                  <th mat-header-cell *matHeaderCellDef mat-sort-header>Client Name</th>
+                  <td mat-cell *matCellDef="let row">{{row.clientLastName}} {{row.clientFirstName}}</td>
+                </ng-container>
+                <!-- Telephone Column -->
+                <ng-container matColumnDef="telephone">
+                  <th mat-header-cell *matHeaderCellDef mat-sort-header>Telephone</th>
+                  <td mat-cell *matCellDef="let row">{{row.telephone}}</td>
+                </ng-container>
+                <!-- Price Column -->
+                <ng-container matColumnDef="price">
+                  <th mat-header-cell *matHeaderCellDef mat-sort-header>Price</th>
+                  <td mat-cell *matCellDef="let row">{{row.totalSum}}</td>
+                </ng-container>
+                <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+                <tr mat-row *matRowDef="let row; columns: displayedColumns;" (click)="completedSelectRow(row)"></tr>
+              </table>
+            
+              <mat-paginator class="paginator" #paginatorUnmanaged
+                  [length]="unmanagedOrdersDataSource.data.length"
+                  [pageIndex]="0"
+                  [pageSize]="50"
+                  [pageSizeOptions]="[25, 50, 100, 250]">
+              </mat-paginator>
+            </div>
+        </mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+
+    <mat-grid-tile [colspan]="1" [rowspan]="1">
+      <mat-card class="dashboard-card">
+        <mat-card-header>
+          <mat-card-title>
+            In Process
+          </mat-card-title>
+        </mat-card-header>
+        <mat-card-content class="dashboard-card-content">
+          <mat-form-field>
+            <input matInput (keyup)="applyFilterInProcess($event.target.value)" placeholder="Filter In Process Orders">
+          </mat-form-field>
+          <div class="table-container mat-elevation-z8">
+              <table mat-table class="full-width-table" [dataSource]="inProcessOrdersDataSource" matSort aria-label="Elements">
+                <!-- Id Column -->
+                <ng-container matColumnDef="id">
+                  <th mat-header-cell *matHeaderCellDef mat-sort-header>Id</th>
+                  <td mat-cell *matCellDef="let row">{{row.id}}</td>
+                </ng-container>
+                <!-- Client Name Column -->
+                <ng-container matColumnDef="clientLastName">
+                  <th mat-header-cell *matHeaderCellDef mat-sort-header>Client Name</th>
+                  <td mat-cell *matCellDef="let row">{{row.clientLastName}} {{row.clientFirstName}}</td>
+                </ng-container>
+                <!-- Telephone Column -->
+                <ng-container matColumnDef="telephone">
+                  <th mat-header-cell *matHeaderCellDef mat-sort-header>Telephone</th>
+                  <td mat-cell *matCellDef="let row">{{row.telephone}}</td>
+                </ng-container>
+                <!-- Price Column -->
+                <ng-container matColumnDef="price">
+                  <th mat-header-cell *matHeaderCellDef mat-sort-header>Price</th>
+                  <td mat-cell *matCellDef="let row">{{row.totalSum}}</td>
+                </ng-container>
+                <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+                <tr mat-row *matRowDef="let row; columns: displayedColumns;"  (click)="inProcessSelectRow(row)"></tr>
+              </table>
+            
+              <mat-paginator class="paginator" #paginatorInProcess
+                  [length]="inProcessOrdersDataSource.data.length"
+                  [pageIndex]="0"
+                  [pageSize]="50"
+                  [pageSizeOptions]="[25, 50, 100, 250]">
+              </mat-paginator>
+            </div>
+        </mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+
+
+    <mat-grid-tile [colspan]="1" [rowspan]="1">
+      <mat-card class="dashboard-card">
+        <mat-card-header>
+          <mat-card-title>
+            Completed
+          </mat-card-title>
+        </mat-card-header>
+        <mat-card-content class="dashboard-card-content">
+          <mat-form-field>
+            <input matInput (keyup)="applyFilterCompleted($event.target.value)" placeholder="Filter Completeed Orders">
+          </mat-form-field>
+          <div class="table-container mat-elevation-z8">
+              <table mat-table class="full-width-table" [dataSource]="completedOrdersDataSource" matSort aria-label="Elements">
+                <!-- Id Column -->
+                <ng-container matColumnDef="id">
+                  <th mat-header-cell *matHeaderCellDef mat-sort-header>Id</th>
+                  <td mat-cell *matCellDef="let row">{{row.id}}</td>
+                </ng-container>
+                <!-- Client Name Column -->
+                <ng-container matColumnDef="clientLastName">
+                  <th mat-header-cell *matHeaderCellDef mat-sort-header>Client Name</th>
+                  <td mat-cell *matCellDef="let row">{{row.clientLastName}} {{row.clientFirstName}}</td>
+                </ng-container>
+                <!-- Telephone Column -->
+                <ng-container matColumnDef="telephone">
+                  <th mat-header-cell *matHeaderCellDef mat-sort-header>Telephone</th>
+                  <td mat-cell *matCellDef="let row">{{row.telephone}}</td>
+                </ng-container>
+                <!-- Price Column -->
+                <ng-container matColumnDef="price">
+                  <th mat-header-cell *matHeaderCellDef mat-sort-header>Price</th>
+                  <td mat-cell *matCellDef="let row">{{row.totalSum}}</td>
+                </ng-container>
+                <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+                <tr mat-row *matRowDef="let row; columns: displayedColumns;" (click)="completedSelectRow(row)"></tr>
+              </table>
+            
+              <mat-paginator class="paginator" #paginatorInProcess
+                  [length]="completedOrdersDataSource.data.length"
+                  [pageIndex]="0"
+                  [pageSize]="50"
+                  [pageSizeOptions]="[25, 50, 100, 250]">
+              </mat-paginator>
+            </div>
+        </mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+
+  </mat-grid-list>
+</div>

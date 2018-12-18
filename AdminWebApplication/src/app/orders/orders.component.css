@@ -1,0 +1,67 @@
+.grid-container {
+    margin: 20px;
+  }
+  
+  .dashboard-card {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+  }
+  
+  .more-button {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+  }
+  
+  .dashboard-card-content {
+    text-align: center;
+  }
+  
+  .table-container {
+    width: 100%;
+    height: 570px;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .full-width-table {
+    width: 100%;
+  }
+  
+  .mat-form-field {
+    margin: 15px;
+    font-size: 14px;
+    width: 80%;
+  }
+  
+  .example-container {
+    display: flex;
+    flex-direction: column;
+    max-height: 500px;
+    min-width: 300px;
+  }
+  
+  .mat-table {
+    overflow: auto;
+    max-height: 500px;
+  }
+  
+  .element-row {
+    position: relative;
+  }
+  
+  .mat-row {
+    cursor: pointer;
+  }
+  
+  .mat-row:hover {
+    background: #303030;
+  }
+  
+  .element-row.expanded {
+    border-bottom-color: transparent;
+  }
